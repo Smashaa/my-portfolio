@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ismail Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("bZdLbX1Yj-iIeqGqd"); // Replace with your EmailJS Public Key
+  })();
+</script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+
+</head>
+<body>
+    <header>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <button id="theme-toggle">🌙</button>
+          </ul>
+        </nav>
+      </header>
+
+      <section id="home">
+    <h1 class="text-4xl sm:text-5xl font-bold leading-tight text-white">
+        <span id="typewriter-text"></span><span id="cursor">|</span>
+      </h1>
+
+      <img src="MMM.jpeg" alt="Ismail Ahmed" class="profile-img" width="150" height="150">
+      
+      <p>My journey into programming started during my high school days when I tinkered with basic programming languages. This  initial exposure quickly blossomed into a full blow passion, leading me to pursue a Degree in Informaton Technology at KCA University. During my Academic years, I eagerly absorbed knowledge about algorithms, data structures and software development methodologies.</p>
+      
+      <br> <br>
+      <a href="#contact" class="hero-btn">Get in Touch</a>
+
+      </section>
+
+      <section id="about">
+        <h2>About Me</h2>
+    
+      <p>Hello! I'm Ismail Ahmed, a Creative frontend Developer & Tech Enthusiast. A Passionate programmer and problem solver with a love for crafting elegant code. Ever since I was a kid, I've been fascinated by the world of technology and computers, and that fascination has only grown stronger over the years. I'm thrilled to be a part of this ever-evolving field, where creativity and innovation know no bounds.
+    
+        I have experience working on a diverse range of projects, from creating web applications that provide seamless user experiences to developing efficient algorithms for data processing. My expertise extends to languages such as  Java, C, and JavaScript, as well as frameworks like React.</p>
+      <a href="ismaa.pdf" download class="cv-button">Download My CV</a>
+    
+      </section>
+
+
+      <section id="hobbies" class="section">
+        <h2 class="section-title">Hobbies & Interests</h2>
+        <div class="hobbies-grid">
+          <div class="hobby-card">
+            <span>📚</span>
+            <h3>Reading</h3>
+            <p>Exploring tech blogs, self-growth books, and modern innovation trends.</p>
+          </div>
+          <div class="hobby-card">
+            <span>💻</span>
+            <h3>Coding</h3>
+            <p>Building fun projects, learning new frameworks, and solving problems on platforms like LeetCode.</p>
+          </div>
+          <div class="hobby-card">
+            <span>🎥</span>
+            <h3>Documentaries</h3>
+            <p>I enjoy tech, history, and social documentaries that expand my worldview.</p>
+          </div>
+          <div class="hobby-card">
+            <span>🌍</span>
+            <h3>Travelling</h3>
+            <p>Discovering new cultures, people, and experiences that fuel creativity and empathy.</p>
+          </div>
+        </div>
+      </section>
+      
+      <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skill">
+          <p>HTML</p>
+          <div class="progress-bar"><div class="progress" style="width: 90%;">90%</div></div>
+        </div>
+        <div class="skill">
+          <p>CSS</p>
+          <div class="progress-bar"><div class="progress" style="width: 85%;">85%</div></div>
+        </div>
+        <div class="skill">
+          <p>JavaScript</p>
+          <div class="progress-bar"><div class="progress" style="width: 80%;">80%</div></div>
+        </div>
+        <div class="skill">
+          <p>Git & GitHub</p>
+          <div class="progress-bar"><div class="progress" style="width: 75%;">75%</div></div>
+        </div>
+        <div class="skill">
+          <p>Responsive Design</p>
+          <div class="progress-bar"><div class="progress" style="width: 85%;">85%</div></div>
+        </div>
+      </section>
+      
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+      
+          <div class="project-card">
+            <img src="kcamarket.jpeg" alt="KCAMarket Screenshot" class="project-img" />
+            <h3>Kcamarket E-commerce Web Application</h3>
+            <p>Developed KCAMarket, a multi-vendor e-commerce platform...</p>
+            <a href="https://github.com/Smashaa/KCAMARKET-E-COMMERCE-WEB-APPLICATION-" target="_blank" class="btn">View on GitHub</a>
+          </div>
+    
+          <div class="tech-stack">
+            
+        <span class="badge">Node.js</span>
+        <span class="badge">CSS</span>
+        <span class="badge">JavaScript</span>
+        <span class="badge">React</span>
+        <span class="badge">MongoDB</span>
+        <span class="badge">Html</span>
+      </div>
+      
+          <div class="project-card">
+            <img src="Blackjack.jpeg" alt="Blackjack Game Screenshot" class="project-img" />
+            <h3>Blackjack Game</h3>
+            <p>Developed a Blackjack game using HTML, CSS, and JavaScript...</p>
+    
+            <div class="tech-stack">
+            
+              <span class="badge">Html</span>
+              <span class="badge">CSS</span>
+              <span class="badge">JavaScript</span>
+             
+            </div>
+            <a href="https://mashagame.netlify.app/" target="_blank" class="btn">Live Demo</a>
+          </div>
+      
+          <div class="project-card">
+            <img src="passenger.jpeg" alt="Passenger Counter Screenshot" class="project-img" />
+            <h3>Passenger Counter App</h3>
+            <p>Crafted a web app to count passengers in real-time...</p>
+    
+            <div class="tech-stack">
+            
+              <span class="badge">Html</span>
+              <span class="badge">CSS</span>
+              <span class="badge">JavaScript</span>
+            
+            </div>
+    
+            <a href="https://ismailcounter.netlify.app/" target="_blank" class="btn">Live Demo</a>
+          </div>
+      
+        </div>
+      </section>
+    
+    
+    
+      <section id="contact">
+        <form id="contact-form">
+          <input type="text" name="user_name" id="user_name" placeholder="Your Name" required>
+          <input type="email" name="user_email" id="user_email" placeholder="Your Email" required>
+    
+          <select name="topic">
+            <option value="topic">Choose a topic</option>
+            <option value="inquiry">General Inquiry</option>
+            <option value="project">Project Collaboration</option>
+            <option value="job">Job Opportunity</option>
+          </select>
+    
+          <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+          <label><input type="checkbox" required> I agree to the terms</label>
+          <button type="button" onclick="sendEmail()">Send Message</button>
+          <p id="form-status"></p>
+        </form>
+      </section>
+      
+      
+      
+    
+      
+    
+      <div class="social-icons">
+        <a href="https://github.com/Smashaa" target="_blank" class="icon github" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ismail-diba-243778340?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="icon linkedin" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://www.instagram.com/mashaa_019?igsh=ZnJzeXY0MjF6Y3Fi" target="_blank" class="icon instagram" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://x.com/Mashaa8_KE?t=BiFCXYrZ6nMTv4yq86oPHw&s=09" target="_blank" class="icon twitter" aria-label="Twitter (X)">
+          <i class="fab fa-x-twitter"></i>
+        </a>
+        
+      </div>
+
+      <footer>
+        
+        <p>© 2025 Ismail Ahmed. Built with ❤️ and code.</p>
+      </footer>
+      
+        
+
+      
+      
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
