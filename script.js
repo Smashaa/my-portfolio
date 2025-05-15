@@ -97,5 +97,28 @@ document.addEventListener("DOMContentLoaded", () => {
     navLinks.classList.toggle("active");
   });
   
+
+  document.getElementById('theme-toggle').addEventListener('click', () => {
+  document.body.classList.toggle('dark');
+});
+
+// Typewriter animation
+function typeWriterEffect(text, elementId) {
+  let i = 0;
+  const speed = 100;
+  function type() {
+    if (i < text.length) {
+      document.getElementById(elementId).textContent += text.charAt(i);
+      i++;
+      setTimeout(type, speed);
+    }
+  }
+  type();
+}
+
+window.onload = function () {
+  typeWriterEffect("I'm Ismail Ahmed | Creative Front end Developer & Tech Enthusiast |", "typewriter-text");
+};
+
   
   
