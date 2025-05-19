@@ -127,3 +127,10 @@ window.onload = function () {
     });
   });
 
+  // Close nav when any link is clicked (on mobile)
+document.querySelectorAll(".nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("active");
+  });
+});
+

@@ -863,3 +863,78 @@
     display: flex;
   }
 }
+
+
+
+
+/* Base light theme (default) */
+body {
+  background-color: #f5f5f5;
+  color: #222;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark mode styles */
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark header,
+body.dark nav,
+body.dark footer {
+  background-color: #1f1f1f;
+}
+
+body.dark a {
+  color: #00ffcc;
+}
+
+body.dark .project-card,
+body.dark .hobby-card {
+  background-color: #1e1e1e;
+  color: #ddd;
+  border: 1px solid #333;
+}
+
+body.dark .progress-bar {
+  background-color: #333;
+}
+
+body.dark .progress {
+  background-color: #00ffcc;
+}
+
+body.dark .cv-button,
+body.dark .hero-btn {
+  background-color: #00ffcc;
+  color: #000;
+}
+
+body.dark .cv-button:hover,
+body.dark .hero-btn:hover {
+  background-color: #00ccaa;
+}
+
+
+* {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.signature {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+  color: #00ccaa; /* or any color you like */
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: none;
+  flex-direction: column;
+  /* Add transition if you want */
+}
+
+.nav-links.active {
+  display: flex;
+}
