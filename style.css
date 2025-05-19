@@ -804,3 +804,62 @@
     margin-top: 10px;
   }
 }
+
+
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #111;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hamburger menu button */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+}
+
+/* Responsive nav */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: #111;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}

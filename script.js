@@ -89,13 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   }
   
-  // Hamburger menu toggle
-  const hamburger = document.getElementById("hamburger");
-  const navLinks = document.getElementById("nav-links");
   
-  hamburger.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-  });
   
 
   document.getElementById('theme-toggle').addEventListener('click', () => {
@@ -122,3 +116,14 @@ window.onload = function () {
 
   
   
+// hamburger menu toggle
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  });
+
